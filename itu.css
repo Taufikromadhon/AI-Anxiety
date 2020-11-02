@@ -1,0 +1,150 @@
+
+
+.minusTop{
+    margin-top: -20px;
+}
+
+.minusTop2{
+    margin-top: -40px;
+}
+
+.minusTop3{
+    margin-top: -50px;
+}
+
+/**
+ * Checkbox Five
+ */
+.checkboxFive {
+    width: 25px;
+    margin: ;
+    position: relative;
+}
+
+/**
+ * Create the box for the checkbox
+ */
+.checkboxFive label {
+    cursor: pointer;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 0;
+    left: 0;
+    background: #34A8BF;
+    border:1px solid #ddd;
+}
+/**
+ * Display the tick inside the checkbox
+ */
+.checkboxFive label:after {
+    opacity: 0;
+    content: '';
+    position: absolute;
+    width: 9px;
+    height: 5px;
+    background: #34A8BF;;
+    top: 6px;
+    left: 7px;
+    border: 3px solid #fff;
+    border-top: none;
+    border-right: none;
+
+    transform: rotate(-45deg);
+}
+/**
+ * Create the hover event of the tick
+ */
+.checkboxFive label:hover::after {
+    opacity: 0.5;
+}
+
+/**
+ * Create the checkbox state for the tick
+ */
+.checkboxFive input[type=checkbox]:checked + label:after {
+    opacity: 1;
+
+}
+
+
+
+form{padding:20px;}
+form label{
+    display:inline-block; 
+    position:relative; 
+    cursor:pointer; 
+    line-height:30px; 
+    vertical-align: top;}
+ 
+/*MULAI MENDESAIN CUSTOM CHECKBOX DAN RADIO BUTTON*/
+form .form-check{
+    display:inline-block; 
+    position:relative; 
+    width:150px; 
+    height:75px;}
+ 
+form .form-check::before{
+    content:""; 
+    display:inline-block; 
+    position:relative; 
+    width:150px; 
+    height:75px; 
+    background:#fff; 
+    border:1px solid #ddd; 
+    border-radius:30px; -moz-border-radius:30px;}
+
+
+    form .form-check::after{
+    content:""; 
+    display:inline-block; 
+    position:absolute; 
+    width:61px; 
+    height:61px; 
+    border-radius:75px; -moz-border-radius:25px; 
+    background:#eee; 
+    left:3px; 
+    top:3px; 
+    transition:0.3s; -moz-transition:0.3s; -webkit-transition:0.3s; -khtml-transition:0.3s;}
+
+
+form .form-check:checked::after{
+    left:27px; 
+    background:#33aa55;}
+/*posisi leftnya dikira-kira aja sesuai kebutuhan~ 
+warna background diubah ke warna yang berwarna sbg pertanda 
+checkbox tersebut aktif*/
+
+form .form-radiosno{display:none;}
+form .form-radiosno + label{padding-left:35px;}
+form .form-radiosno + label::before{
+    content:""; 
+    position:absolute; 
+    left:0px; 
+    display:inline-block; 
+    width:20px; 
+    height:20px; 
+    background:#34F98F; 
+    margin-right:5px; 
+    border:1px solid #34F98F; 
+    border-radius:60%; -moz-border-radius:60%; 
+    box-shadow:2px 2px 2px 2px #bbb; -moz-box-shadow:2px 2px 2px 2px #bbb;
+    transition:0.23s; -moz-transition:0.23s; -webkit-transition:0.3s; -khtml-transition:0.3s;}
+form .form-radiosno:checked + label::before{
+    background:#fff; 
+    border:6px solid #34F98F; 
+    width:20px; 
+    height:20px;}
+
+    
+
+fieldset .fieldsets {
+  display: block;
+  margin-left: 2px;
+  margin-right: 2px;
+  padding-top: 0.35em;
+  padding-bottom: 0.625em;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  border: 12px groove (internal value);
+}

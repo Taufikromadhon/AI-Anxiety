@@ -1,0 +1,11 @@
+  .pesan{
+                display: none;
+                position: fixed;
+                border: 1px solid blue;
+                width: 200px;
+                top: 10px;
+                left: 200px;
+                padding: 5px 10px;
+                background-color: lightskyblue;
+                text-align: center;
+            }
